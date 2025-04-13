@@ -1,11 +1,14 @@
-cp-xai-metrics/
-  ├── README.md
-  ├── metrics.py    # Code for XAI metrics
-  └── window_selections		# Place extracted windows from the infant pose data here
-
 # Cerebral Palsy XAI Metrics
 
 A Python module for evaluating XAI techniques in our CP prediction ensemble.
+
+## Repository Structure
+```
+cp-xai-metrics/
+  ├── README.md
+  ├── metrics.py    # Code for XAI metrics
+  └── window_selections/   # Place extracted windows from the infant pose data here
+```
 
 ## Overview
 
@@ -26,13 +29,11 @@ This repository contains metrics for quantifying the faithfulness and stability 
   - RISv: Velocity input
   - RISb: Bone length input
 - **RRS (Robustness to Representation Stability)**: Measures explanation stability relative to internal representation changes.
-- **Stability values closer to zero indicate robust explanations.
+- Stability values closer to zero indicate robust explanations.
 
 ## Usage
 
 This module is designed to be used with our CP prediction ensemble. Create a wrapper function that interfaces with the model and passes the results to our metrics evaluation.
-
-```
 
 ### Required Function Interface
 
